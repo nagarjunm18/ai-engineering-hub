@@ -46,6 +46,7 @@ with st.sidebar:
         """)
 
 def generate_content(topic, temperature):
+    """Generate content for the given topic using the specified temperature."""
     llm = LLM(
         model="command-r",
         temperature=temperature
